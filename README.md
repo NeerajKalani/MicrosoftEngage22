@@ -2,6 +2,9 @@
 
 # Facial Recognition System
 
+# Use username: neerajkalani
+# Use password: neeraj1234*
+
 A facial recognition project which recognizes a student's face and saves the attendance in database.
 
 It also can create a report on attendance and save that pdf.
