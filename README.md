@@ -34,10 +34,22 @@ Backend
 
 # Installation
 
+Kindly run the commands in anaconda.
 The Code is written in Python . To install the required packages and libraries, run this command in the project directory after cloning the repository:-
 
     pip install -r requirements.txt
 
+Alternative(Try these commands)
+    pip install numpy
+    pip install opencv-contrib-python
+    pip install opencv-python
+    pip install pandas
+    pip install Pillow
+    pip install python-dateutil
+    pip install pytz
+    pip install six
+    pip install sqlparse
+    
 After cloning check that all the libraries are installed .
 
 For running the same project go to the project folder where the manage.py file is located and run the following command into the command prompt:-
