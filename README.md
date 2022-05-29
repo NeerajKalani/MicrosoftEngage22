@@ -2,7 +2,7 @@
 
 # Facial Recognition System
 
-# During login
+# On login page
 
     Use username: neerajkalani
     Use password: neeraj1234*
