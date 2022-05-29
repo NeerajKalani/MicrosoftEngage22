@@ -15,7 +15,7 @@ https://drive.google.com/drive/folders/1D1jK9sOiy00rzxYAMqjre7yX1zc4rWEk
 # Basic Functionality
 
     1. Capturing Images, Training Model and Recognising Face.
-    2. Dashboard That shows all students present as well as absent and a user can view, update and delete the student using dashboard.
+    2. Dashboard That shows all students present as well as absent and a user can view and delete the student using dashboard.
     3. It creates a excel sheets which adds the unique students.
 
 # Technical Aspect
