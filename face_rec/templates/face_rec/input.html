@@ -1,0 +1,51 @@
+
+
+{% extends 'face_rec/main.html' %}
+{% block content %}
+<body>
+	<div class="container text-center">
+        <form class="form-signin" action="/create_dataset" method="post" >{% csrf_token %}
+            <h4 class="text-center">Capture Images</h4>
+            <button class="btn btn-lg btn-dark btn-lg" style="justify-content: center;" type="button" data-toggle="modal" data-target="#myModal">Create Dataset</button>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            
+                        </div>
+                        <h4 class="modal-title text-center" id="myModalLabel">Inputs for webcam</h4>
+                        <div class="modal-body">
+                            <form action="#" method="POST">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <label for="inputId">Enter Unique ID</label>
+                                    <input type="text" class="form-control" name="userId" id="inputId" placeholder="Enter Id">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputId1">Enter Unique Name</label>
+                                    <input type="text" class="form-control" name="userId1" id="inputId" placeholder="Enter Name">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br><hr>
+
+        <form class="form-signin" action="/trainer" method="post">{% csrf_token %}
+            <h4 class="text-center">Train Images</h4>
+            <button class="btn btn-lg btn-dark btn-lg" type="submit">Train The Classifier</button>
+        </form><br><hr>
+         <form class="form-signin" action="/detect" method="post">{% csrf_token %}       
+            <h4 class="text-center">Recognizing Faces</h4>
+            <button class="btn btn-lg btn-dark btn-lg" type="submit">Detect By Camera</button>
+            {% for message in messages %}
+                <p class="message">{{message}}</p>
+            {% endfor %}
+        </form>
+    </div>
+</body>
+{% endblock %}
