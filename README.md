@@ -40,6 +40,7 @@ The Code is written in Python . To install the required packages and libraries, 
     pip install -r requirements.txt
 
 Alternative(Try these commands)
+
     pip install numpy
     pip install opencv-contrib-python
     pip install opencv-python
