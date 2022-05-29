@@ -67,6 +67,8 @@ For running the same project go to the project folder where the manage.py file i
     
 while creating superuser enter username and password of your choice
 
+to register new user : https://drive.google.com/drive/u/0/folders/1n3jwTzOAcx3ZicsQuueNPmRe6t8VWjxn
+
 # Directory Tree
 
     ├── face_recognition_system (application folder)
