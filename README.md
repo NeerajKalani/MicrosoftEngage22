@@ -44,7 +44,7 @@ For running the same project go to the project folder where the manage.py file i
     
     python manage.py makemigrations
     python manage.py migrate
-    python manage.py createsuperuser (username : neerajkalani, password: neeraj1234*)
+    python manage.py createsuperuser 
     python manage.py runserver
 
 # Directory Tree
